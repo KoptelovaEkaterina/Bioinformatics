@@ -19,7 +19,7 @@ We had file with few columns.
 awk '{print $2 "\n" $14 "\n"}' way_to file/file > way_to_put/file
 ```
 
-Than we took 2 and 14 and made one file
+Than we took 2 and 14 and made one file.fasta
 
 |0|
 |--|
