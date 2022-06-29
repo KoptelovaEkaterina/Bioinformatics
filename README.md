@@ -37,10 +37,12 @@ Than we took 2 and 14 and made one file.fasta
 
 ## Using ggplot R
 
-One of the solutions to the R course from the stepic platform.
+A few solutions to the R course from the stepic platform.
 
-The USmelanoma dataframe (package HSAUR3) contains data on white male malignant melanoma mortality from 1950-1969 in various US states (except Hawaii). 
-Plotting the kernel density of mortality using "darkorange" color.
+🐉 The USmelanoma dataframe (package HSAUR3) contains data on white male malignant melanoma mortality from 1950-1969 in various US states (except Hawaii). 
+Plotting the kernel density of mortality using "darkorange" color. 
+(The package and data are already in the USmelanoma variable)
+https://stepik.org/lesson/122049/step/14
 
 ![Github](https://ucarecdn.com/1dc99bf2-89b3-4c14-967c-bd30d363219e/)
 
@@ -49,4 +51,19 @@ Graphics code:
 ```r
 gg_mel <- ggplot(USmelanoma, aes(x=mortality)) +
 + geom_density(fill="darkorange", colour="black") + theme_dark()
+```
+
+
+🐉 Histograms of the distribution of median per capita income (in US dollars) in countries located in different continents (Leinhardt data from the carData package). Using a class step width of 250. 
+(The package and the data are already in the Leinhardt variable)
+https://stepik.org/lesson/122049/step/16
+
+![Github](https://ucarecdn.com/c76c6089-b32c-4d84-af2d-9914538719c9/)
+
+Graphics code: 
+
+```r
+gg_Leinhardt <- ggplot(Leinhardt, aes(x=income)) + 
++geom_histogram(binwidth = 250, aes(fill=region)) +
++ facet_wrap(~region,nrow=4) + theme_light()
 ```
