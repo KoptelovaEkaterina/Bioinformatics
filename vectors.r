@@ -3,7 +3,7 @@
 # Use the logical vector air_fltr to select values of nitric acid concentration for which the cooling air flow is less than 60. 
 # The acid_subset variable stores the sampled values themselves, 
 # and the acid_concs variable stores the frequency table of unique acid concentration values for these sampled data.
-# https://stepik.org/lesson/121889/step/14
+# https://stepik.org/lesson/121889/step/14 "Знакомство с R и базовая статистика"
 
 # logical vector
 air_fltr <- stackloss$Acid.Conc. & stackloss$Air.Flow < 60 
