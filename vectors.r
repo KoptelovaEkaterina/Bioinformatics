@@ -12,3 +12,13 @@ acid_subset <- stackloss$Acid.Conc.[stackloss$Air.Flow < 60]
 
 # frequencies of unique values
 acid_concs <- table(acid_subset)
+
+
+
+# Usaging integrated dataframe stackloss
+# The logic vector temp_fltr, which has TRUE if the coolant temperature is between 20-25 degrees inclusive. 
+# The average ammonia loss (stack.loss) in this temperature range in the variable mean_stack_20_25.
+
+temp_fltr <- stackloss$Water.Temp %in% c(20:25)
+
+mean_stack_20_25 <- mean(stackloss$stack.loss [stackloss$Water.Temp %in% c(20:25)])
