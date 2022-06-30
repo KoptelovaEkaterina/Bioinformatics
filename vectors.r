@@ -18,7 +18,22 @@ acid_concs <- table(acid_subset)
 # Usaging integrated dataframe stackloss
 # The logic vector temp_fltr, which has TRUE if the coolant temperature is between 20-25 degrees inclusive. 
 # The average ammonia loss (stack.loss) in this temperature range in the variable mean_stack_20_25.
+# https://stepik.org/lesson/121889/step/15
 
 temp_fltr <- stackloss$Water.Temp %in% c(20:25)
 
 mean_stack_20_25 <- mean(stackloss$stack.loss [stackloss$Water.Temp %in% c(20:25)])
+
+
+
+# From the suggested three vectors create a dfr dataframe with the specified structure. 
+# https://stepik.org/lesson/121889/step/16
+
+vec1 <- 1:6
+vec2 <- c('radio', 'newspaper', 'web-page', 'chat', 'tv', 'web-page')
+vec3 <- c(0, 0, 1, 1, 0, 1)
+
+
+ dfr <- data.frame(id = vec1,stringsAsFactors = FALSE)
+ dfr$response <- factor(x = vec3, levels = c(0, 1) , labels = c('No','Yes'))
+dfr$medium <- vec2
