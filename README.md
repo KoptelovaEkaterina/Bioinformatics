@@ -64,8 +64,20 @@ Graphics code:
 
 ```r
 gg_Leinhardt <- ggplot(Leinhardt, aes(x=income)) + 
-+geom_histogram(binwidth = 250, aes(fill=region)) +
++ geom_histogram(binwidth = 250, aes(fill=region)) +
 + facet_wrap(~region,nrow=4) + theme_light()
 ```
 
 
+
+🐉 Change the orange graph shown above to get the nuclear density of malignant melanoma mortality depending on whether the state is on the coast or not.
+https://stepik.org/lesson/122049/step/15
+
+![Github](https://ucarecdn.com/afd0a2c4-645f-4c93-be1c-e336fbb2eb35/)
+
+Graphics code: 
+
+```r
+gg_mel_2 <- ggplot(USmelanoma, aes(x=mortality)) +
++ geom_density(aes(fill=ocean, alpha=0.5)) + theme_bw()
+```
