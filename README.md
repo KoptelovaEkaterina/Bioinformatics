@@ -35,7 +35,7 @@ Than we took 2 and 14 and made one file.fasta
 |TCCCTCCAGT|
 
 
-## Using ggplot R
+## Using ggplot2 R
 
 A few solutions to the R course from the stepic platform.
 
@@ -67,3 +67,5 @@ gg_Leinhardt <- ggplot(Leinhardt, aes(x=income)) +
 +geom_histogram(binwidth = 250, aes(fill=region)) +
 + facet_wrap(~region,nrow=4) + theme_light()
 ```
+
+
