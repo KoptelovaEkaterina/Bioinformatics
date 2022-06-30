@@ -37,7 +37,7 @@ Than we took 2 and 14 and made one file.fasta
 
 ## Using ggplot2 R
 
-A few solutions to the R course from the stepic platform.
+A few solutions to the R course from the stepik platform.
 
 🐉 The USmelanoma dataframe (package HSAUR3) contains data on white male malignant melanoma mortality from 1950-1969 in various US states (except Hawaii). 
 Plotting the kernel density of mortality using "darkorange" color. 
