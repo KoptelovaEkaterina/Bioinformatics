@@ -1,4 +1,4 @@
-# Bioinformatics
+# Bioinformatic
 ## creative work AWK
 
 Sequences in FASTA format consist of a one-line description, and contain the sequence itself on the next line.
